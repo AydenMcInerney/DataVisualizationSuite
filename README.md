@@ -150,3 +150,17 @@ Computer Science (Data Science Option)
 Penn State Harrisburg
 
 Interested in software engineering, data engineering, and data-driven application development.
+
+---
+
+## 🎥 Project Demonstration
+
+A walkthrough of all four applications:
+
+https://github.com/user-attachments/assets/340fd7fd-f2d9-43e2-9796-564f2b339ad8
+
+https://github.com/user-attachments/assets/efc093da-6112-465d-9814-007d1f5f161a
+
+https://github.com/user-attachments/assets/8ceea851-4274-43b0-88cf-ef27cba6fcba
+
+https://github.com/user-attachments/assets/450c399e-06da-468c-b697-6b664351abf6
