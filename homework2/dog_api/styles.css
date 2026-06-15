@@ -1,0 +1,21 @@
+body {
+    background: #f4f6f8;
+}
+
+.status-card {
+    border-radius: 12px;
+}
+
+.card-image img {
+    height: 190px;
+    object-fit: cover;
+}
+
+.breed-chip {
+    margin-top: 10px;
+}
+
+.small-note {
+    font-size: 0.92rem;
+    opacity: 0.85;
+}

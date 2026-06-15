@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Country Data Globe (D3)</title>
+
+  <!-- Materialize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"/>
+
+  <!-- D3 + TopoJSON client -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+
+  <link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+
+<nav class="blue-grey darken-3">
+  <div class="nav-wrapper container">
+    <a class="brand-logo" href="#!">Country Globe (D3)</a>
+  </div>
+</nav>
+
+<div class="container section">
+  <div class="row">
+    <div class="col s12 m8">
+      <div class="card">
+        <div class="card-content">
+          <span class="card-title">Interactive Globe</span>
+          <p class="small-note">
+            Drag to rotate. Scroll to zoom. Click a country to load details.
+          </p>
+          <div id="globeWrap">
+            <svg id="globe"></svg>
+          </div>
+
+          <div id="mapStatus" class="status-chip chip blue-grey lighten-4">
+            Loading map…
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col s12 m4">
+      <div class="card" id="infoCard">
+        <div class="card-content">
+          <span class="card-title" id="countryTitle">Select a country</span>
+
+          <div class="flag-wrap">
+            <img id="flagImg" alt="Flag" />
+          </div>
+
+          <div id="infoBody" class="info-body">
+            <p class="small-note">Click a country on the globe to see details here.</p>
+          </div>
+        </div>
+
+        <div class="card-action">
+          <span id="apiStatus" class="grey-text text-darken-1"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

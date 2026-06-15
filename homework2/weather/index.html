@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<main class="app">
+    <h1>Weather Lookup</h1>
+
+    <form id="zipForm" class="controls">
+        <label for="zipInput">Zip Code</label>
+        <input id="zipInput" type="text" inputmode="numeric" placeholder="e.g., 17057" maxlength="10" />
+        <button id="btn" type="submit">Get Weather</button>
+    </form>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section id="current" class="card hidden">
+        <h2 id="locationTitle">Current Conditions</h2>
+        <div class="current-grid">
+            <div>
+                <div class="big" id="currentTemp">--</div>
+                <div id="currentDesc">--</div>
+            </div>
+            <ul class="meta">
+                <li><strong>Feels like:</strong> <span id="feelsLike">--</span></li>
+                <li><strong>Humidity:</strong> <span id="humidity">--</span></li>
+                <li><strong>Wind:</strong> <span id="wind">--</span></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="daily" class="hidden">
+        <h2>Daily Forecast</h2>
+        <div id="dailyGrid" class="grid"></div>
+    </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
